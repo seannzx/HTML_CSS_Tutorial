@@ -1,0 +1,114 @@
+<style>
+  .back-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .next-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .pagenums {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: padding-top 0.5s, padding-bottom 0.5s, padding-left 0.5s, padding-right 0.5s;
+  }
+
+  .stretch-button:hover {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* Shifting margin and padding at same*/
+  .number-buttons {
+    background-color: green;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .number-buttons:hover {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  /* 3D Click feature*/
+  .shadow-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .shadow-button:active {
+    margin-top: 12px;
+    margin-left: 2px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+  }
+
+</style>
+
+
+<button class="back-button">
+  Back
+</button>
+
+<a class="pagenums" href="https://google.com">1</a>
+<a class="pagenums" href="https://google.com">2</a>
+<a class="pagenums" href="https://google.com">3</a>
+<a class="pagenums" href="https://google.com">4</a>
+<a class="pagenums" href="https://google.com">5</a>
+
+<button class="next-button">
+  Next
+</button>
+
+<br>
+<button class="stretch-button">Stretch</button>
+<br>
+
+
+<button class="number-buttons">One</button>
+<button class="number-buttons">Two</button>
+<button class="number-buttons">Three</button>
+
+<br>
+<button class="shadow-button">Shadow</button>

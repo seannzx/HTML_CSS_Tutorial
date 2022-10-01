@@ -1,0 +1,83 @@
+<style>
+  .subscribe-button{ /*start with . means target class name instead of an element name*/
+    background-color: rgb(199, 0, 0);
+    color: white; /* change text color*/
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15;
+    padding-right: 15; /* better alternative to height and width*/
+    border-radius: 2px; /* change rounded corners. Higher pixels = more rounded*/
+    cursor: pointer; /* change mouse to become pointer when within the button*/
+    margin-right: 8px; /* leaves 8px space to right*/
+    transition: opacity 0.15s; /*takes 2 values, what you want to change and how long it takes*/
+    vertical-align: top; /*align to top instead of aligning to text*/
+  }
+
+  .subscribe-button:hover { /* style applied only when mouse hovers on button*/
+    opacity: 0.7; /* between 0 and 1*/
+  }
+
+  .subscribe-button:active { /* when clicked, apply this style*/
+    opacity: 0.4;
+  }
+
+  .join-button{
+    background-color: white;
+    border-color: rgb(6, 85, 212);
+    border-style: solid; /*changes border color to one single shade */
+    border-width: 1px;
+    color: rgb(6, 95, 212);
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15;
+    padding-right: 15; 
+    border-radius: 2px; 
+    cursor: pointer;
+    margin-right: 6px;
+    transition: background-color 0.1s, color 0.1s;
+  }
+
+  .join-button:hover {
+    background-color: rgb(6, 85, 212);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.7;
+  }
+
+  .tweet-button{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15;
+    padding-right: 15; 
+    border-radius: 18px; /*set to half of height or width, whichever is lower, to get full rounded*/
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+  }
+
+  /*add shadow to button when hovering*/
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);  /*horizontal pos, vertical pos, blur, color. rgba() -> opacity for color*/
+  }
+</style>
+
+<!-- class attribute labels element-->
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
